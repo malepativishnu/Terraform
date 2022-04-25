@@ -1,0 +1,15 @@
+provider"aws"{
+     region="us-west-2"
+}
+resource"aws instance""vishnuserver1"{
+  count  ="1"
+  ami  ="ami-074251216af698218"
+  instance type="t2.micro"
+  key name   ="vishnunew"
+  subnetid ="subnet-0855548b411ab5108"
+  security group =["sg-092cd51b74e79a773" ]
+  tags={
+   Name ="vishnuservwer1"
+   Env ="dev"
+   }
+  }
