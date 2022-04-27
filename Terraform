@@ -3,11 +3,11 @@ provider"aws"{
 }
 resource"aws instance""vishnuserver1"{
   count  ="1"
-  ami  ="ami-074251216af698218"
+  ami  ="ami-02b92c281a4d3dc79"
   instance type="t2.micro"
   key name   ="vishnunew"
-  subnetid ="subnet-0855548b411ab5108"
-  security group =["sg-092cd51b74e79a773" ]
+  subnetid ="subnet-026ea85678e36f005"
+  security group =["vpc-098527e72cf560a57" ]
   tags={
    Name ="vishnuservwer1"
    Env ="dev"
